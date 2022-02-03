@@ -1,6 +1,6 @@
 'use strict';
 
-describe('ep_font_size - Select font-size dropdown localization', function () {
+describe('md_font_size - Select font-size dropdown localization', function () {
   const changeEtherpadLanguageTo = (lang, callback) => {
     const boldTitles = {
       en: 'Bold (Ctrl+B)',
@@ -39,7 +39,7 @@ describe('ep_font_size - Select font-size dropdown localization', function () {
 
   it('Localizes dropdown when Etherpad language is changed', function (done) {
     const optionTranslations = {
-      'ep_font_size.size': 'Taille de police',
+      'md_font_size.size': 'Taille de police',
     };
     const chrome$ = helper.padChrome$;
     const $option = chrome$('#editbar').find('#font-size').find('option').first();

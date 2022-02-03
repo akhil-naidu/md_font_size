@@ -1,6 +1,6 @@
 'use strict';
 
-const eejs = require('ep_etherpad-lite/node/eejs/');
+const eejs = require('md_mudoc-lite/node/eejs/');
 
 // Add the props to be supported in export
 exports.exportHtmlAdditionalTagsWithData = async (hookName, pad) => {
@@ -11,7 +11,7 @@ exports.exportHtmlAdditionalTagsWithData = async (hookName, pad) => {
 
 // Include CSS for HTML export
 exports.stylesForExport =
-    async (hookName, padId) => eejs.require('ep_font_size/static/css/size.css');
+    async (hookName, padId) => eejs.require('md_font_size/static/css/size.css');
 
 exports.getLineHTMLForExport = async (hookName, context) => {
   // Replace data-size="foo" with class="font-size:x".

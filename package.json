@@ -4,7 +4,7 @@
     "email": "kaparapu.akhilnaidu@gmail.com"
   },
   "bugs": {
-    "url": "https://github.com/ether/ep_font_size/issues"
+    "url": "https://github.com/akhil-naidu/md_font_size/issues"
   },
   "bundleDependencies": false,
   "dependencies": {},
@@ -28,23 +28,23 @@
     "root": true,
     "extends": "etherpad/plugin"
   },
-  "homepage": "https://github.com/ether/ep_font_size#readme",
+  "homepage": "https://github.com/akhil-naidu/md_font_size#readme",
   "keywords": [
     "mudoc",
     "plugin"
   ],
   "license": "Apache-2.0",
-  "name": "ep_font_size",
+  "name": "md_font_size",
   "peerDependencies": {
-    "ep_etherpad-lite": ">=1.8.6"
+    "md_mudoc-lite": ">=0.0.2"
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/ether/ep_font_size.git"
+    "url": "git+https://github.com/akhil-naidu/md_font_size.git"
   },
   "scripts": {
     "lint": "eslint .",
     "lint:fix": "eslint --fix ."
   },
-  "version": "0.4.37"
+  "version": "0.0.3"
 }

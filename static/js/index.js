@@ -58,7 +58,7 @@ exports.aceInitialized = (hookName, context) => {
   };
 };
 
-exports.aceEditorCSS = () => ['ep_font_size/static/css/size.css'];
+exports.aceEditorCSS = () => ['md_font_size/static/css/size.css'];
 
 exports.postToolbarInit = (hookName, context) => {
   context.toolbar.registerCommand('fontSize', (buttonName, toolbar, item) => {

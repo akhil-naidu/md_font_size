@@ -1,7 +1,7 @@
 'use strict';
 
-const common = require('ep_etherpad-lite/tests/backend/common');
-const randomString = require('ep_etherpad-lite/static/js/pad_utils').randomString;
+const common = require('md_mudoc-lite/tests/backend/common');
+const randomString = require('md_mudoc-lite/static/js/pad_utils').randomString;
 
 let agent;
 const apiVersion = 1;
@@ -52,7 +52,7 @@ const regexWithSize = (size, text) => {
 };
 
 
-describe('ep_font_size - export size styles to HTML', function () {
+describe('md_font_size - export size styles to HTML', function () {
   let padID;
   let html;
 

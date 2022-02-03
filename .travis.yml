@@ -34,12 +34,12 @@ jobs:
         - sudo apt-get -y install libreoffice-pdfimport
       install:
         - "npm install"
-        - "mkdir ep_font_size"
-        - "mv !(ep_font_size) ep_font_size"
+        - "mkdir md_font_size"
+        - "mv !(md_font_size) md_font_size"
         - "git clone https://github.com/ether/etherpad-lite.git etherpad"
         - "cd etherpad"
         - "mkdir -p node_modules"
-        - "mv ../ep_font_size node_modules"
+        - "mv ../md_font_size node_modules"
         - "bin/installDeps.sh"
         - "export GIT_HASH=$(git rev-parse --verify --short HEAD)"
         - "cd src && npm install && cd -"
@@ -50,12 +50,12 @@ jobs:
         - "tests/frontend/travis/sauce_tunnel.sh"
       install:
         - "npm install"
-        - "mkdir ep_font_size"
-        - "mv !(ep_font_size) ep_font_size"
+        - "mkdir md_font_size"
+        - "mv !(md_font_size) md_font_size"
         - "git clone https://github.com/ether/etherpad-lite.git etherpad"
         - "cd etherpad"
         - "mkdir -p node_modules"
-        - "mv ../ep_font_size node_modules"
+        - "mv ../md_font_size node_modules"
         - "bin/installDeps.sh"
         - "export GIT_HASH=$(git rev-parse --verify --short HEAD)"
       script:
